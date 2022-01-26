@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*---------------- Variables à utiliser ----------------*/
+/*---------------------- Chargements des mixins ----------------------*/
+/* ---------titre de la page ------------*/
+.input_title_h1 {
+  font-size: 2.5em;
+  color: #7fc241;
+}
+
+.input_title_h2 {
+  font-size: 1.5em;
+  color: #231f20;
+}
+
+.input_title_h1,
+.input_title_h2 {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------ Div de la section --------------*/
+.input_section_div1 {
+  text-align: end;
+}
+
+/*----------- Champ de la date --------------------*/
+.input_color {
+  border: 1px solid #7fc241;
+}
+
+.input_date,
+.input_p_select {
+  background-color: #fff;
+  color: #7fc241;
+  height: 34px;
+}
+
+.input_icon1,
+.input_icon2 {
+  height: 42px;
+  border-radius: 18px;
+  padding-left: 2px;
+  margin-right: 10px;
+}
+
+/*---------- champ de section -------------*/
+.input_p_select {
+  color: #fff;
+  background-color: #7fc241;
+}
+
+/*----------- Critères ----------------*/
+.input_critere {
+  color: #7fc241;
+  border-color: transparent;
+}
+.input_critere:hover {
+  color: #fff;
+  background-color: #7fc241;
+}
+
+.input_others,
+.input_search {
+  color: #7fc241;
+  background-color: #fff;
+  border-color: transparent;
+  border-style: outset;
+  border-color: #7fc241;
+}
+.input_others::-moz-placeholder, .input_search::-moz-placeholder {
+  color: #7fc241;
+}
+.input_others:-ms-input-placeholder, .input_search:-ms-input-placeholder {
+  color: #7fc241;
+}
+.input_others::placeholder,
+.input_search::placeholder {
+  color: #7fc241;
+}
+.input_others:hover,
+.input_search:hover {
+  color: #fff;
+  background-color: #7fc241;
+}
+
+.input_btn {
+  color: #fff;
+  background-color: #7fc241;
+}
+
+.input_search,
+.input_others {
+  width: 500px;
+}
+
+.input_case {
+  color: #7fc241;
+}
+
+.input_div_case {
+  background-color: #fff;
+  text-align: center;
+  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+
+.input_div_date,
+.input_form {
+  display: inline-flex;
+}
+
+.input_checkbox {
+  height: 40px;
+  width: 30px;
+}
+
+/*---------- mise en forme des inputs ----------*/
+.input_date,
+.input_p_select,
+.input_others,
+.input_search {
+  border-radius: 18px;
+  border-style: outset;
+}/*# sourceMappingURL=styles.css.map */

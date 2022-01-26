@@ -1,0 +1,18 @@
+.input_color {
+    @include colorBord;
+}
+
+.input_date,
+.input_p_select {
+    background-color: $color5;
+    color: $color1;
+    height: $input-height;
+}
+
+.input_icon1,
+.input_icon2 {
+    height: $height;
+    border-radius: $radius;
+    padding-left: $pl;
+    margin-right: $mr;
+}

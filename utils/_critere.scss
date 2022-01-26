@@ -1,0 +1,50 @@
+.input_critere {
+    color: $color1;
+    border-color: $border-color;
+
+    &:hover {
+        color: $color5;
+        background-color: $color1;
+    }
+}
+
+.input_others,
+.input_search {
+    @include inputCritereStyle;
+
+    border-color: $color1;
+
+    &:hover {
+        color: $color5;
+        background-color: $color1;
+    }
+}
+
+.input_btn {
+    color: $color5;
+    background-color: $color1;
+}
+
+.input_search,
+.input_others {
+    width: $large;
+}
+
+.input_case {
+    color: $color1;
+}
+
+.input_div_case {
+    background-color: $color5;
+    text-align: $text-align;
+    @include divFond;
+}
+
+.input_div_date,
+.input_form {
+    display: $display;
+}
+
+.input_checkbox {
+    @include checkboxStyle;
+}

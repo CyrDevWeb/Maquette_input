@@ -1,0 +1,23 @@
+@mixin divFond {
+    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+
+@mixin colorBord {
+    border: 1px solid $color1;
+}
+
+@mixin checkboxStyle {
+    height: 40px;
+    width: 30px;
+}
+
+@mixin inputCritereStyle {
+    color: $color1;
+    background-color: $color5;
+    border-color: $border-color;
+    border-style: $style-border;
+
+    &::placeholder {
+        color: $color1;
+    }
+}

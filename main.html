@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="JS_input_btn.js"></script>
+    <script src="JS_cache_checkbox.js"></script>
+    <title>Inputs à intégrer en HTML</title>
+</head>
+
+<body>
+    <!-- le titre h1 est facultatif !  -->
+    <h1 class="input_title_h1">
+        Inputs en HTML
+    </h1> <br>
+    <section>
+        <!-- on attaque ici -->
+        <!-- partie visible de base -->
+        <div class="input_section_div1">
+            <h2 class="input_title_h2">
+                Chercher une salle :
+            </h2> <br>
+            <div class="input_div_date">
+                <img src="photos/icons8-calendar-50.png" class="input_icon1" alt="">
+                <input type="date" class="input_date input_color">
+            </div>
+            <br> <br>
+            <form type="submit" class="input_form">
+                <img src="photos/icons8-room-64.png" class="input_icon2" alt="">
+                <select name="choix" class="input_p_select input_control" id="">
+                    <option value="categorie">Catégorie</option>
+                    <option value="espace">Espace</option>
+                    <option value="disponibilite">Disponibilité</option>
+                </select>
+            </form>
+            <p>
+                <!-- Ne pas oublier, cette partie devra être animée en JS -->
+                <button type="button" id="togg1" class="input_critere" onclick="maFonction()">
+                    + de critère
+                </button>
+            </p>
+        </div>
+        <!-- Partie cachée et qui devra être dévoilée en JavaScript au clic sur + de critère -->
+        <div id="Input_div_hidden" class="input_div_case">
+            <p class="input_case" id="input_case">
+                <br>
+                <label>
+                    <input type="radio" class="input_checkbox" name="avis" id="avis1" value="Parfaite" onclick="fonction_avis_input()"/>
+                    <label class="input_case" for="Parfaite">Parfaite</label>
+                </label>
+                <label>
+                    <input type="radio" class="input_checkbox" name="avis" id="avis2" value="Bien" onclick="fonction_avis_input()"/>
+                    <label class="input_case" for="Bien">Bien</label>
+                </label>
+                <label>
+                    <input type="radio" class="input_checkbox" name="avis" id="avis3" value="Insuffisante" onclick="fonction_avis_input()" />
+                    <label class="input_case" for="Insuffisante">Insuffisante</label>
+                </label>
+            </p>
+            <div class="input_case"> 
+                <div>
+                    <label>
+                        <input type="checkbox" id="input_parfait" class="input_checkbox checkbox"
+                            onclick="UncheckCaseParfait()" />
+                        Parfaite
+                    </label>
+                    <label>
+                        <input type="checkbox" id="input_bien" class="input_checkbox checkbox"
+                            onclick="UncheckCaseBien()" />
+                        Bien
+                    </label>
+                    <label>
+                        <input type="checkbox" id="input_insuffisant" class="input_checkbox checkbox"
+                            onclick="UncheckCaseInsatisfied()" />
+                        Insuffisant
+                    </label>
+                </div> <br>
+                <input type="text" class="input_others" placeholder="Autres remarques">
+                <p>
+                    <input type="search" class="input_search" value="Effectuer une recherche plus précise">
+                </p>
+                <p>
+                    <input type="submit" class="input_btn" value="Envoyer">
+                </p>
+            </div>
+    </section>
+</body>
+
+</html>

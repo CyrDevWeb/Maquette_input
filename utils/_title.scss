@@ -1,0 +1,16 @@
+.input_title_h1 {
+    font-size: $size_h1;
+    color: $color1;
+}
+
+.input_title_h2 {
+    font-size: $size_h2;
+    color: $color4;
+}
+
+.input_title_h1,
+.input_title_h2 {
+    font-weight: $font-weight;
+    margin: $margin;
+    padding: $padding;
+}

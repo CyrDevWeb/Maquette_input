@@ -1,0 +1,23 @@
+/*---------------- Variables à utiliser ----------------*/
+@import "utils/variables";
+
+/*---------------------- Chargements des mixins ----------------------*/
+@import "utils/mixins";
+
+/* ---------titre de la page ------------*/
+@import "utils/title";
+
+/*------------ Div de la section --------------*/
+@import "utils/div";
+
+/*----------- Champ de la date --------------------*/
+@import "utils/date";
+
+/*---------- champ de section -------------*/
+@import "utils/section";
+
+/*----------- Critères ----------------*/
+@import "utils/critere";
+
+/*---------- mise en forme des inputs ----------*/
+@import "utils/mise_en_forme";
